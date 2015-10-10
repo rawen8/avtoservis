@@ -535,7 +535,7 @@ $(document).ready(function() {
     });
 
     // закрепление навигации
-    $('.breadcrumb, .template-slider').waypoint(function() {
+    $('.breadcrumb, .main-spec').waypoint(function() {
         if (FIXED_NAVBAR)
             $('#navigation').toggleClass('navbar-fixed-top');
 

@@ -715,7 +715,10 @@ header .background {
     padding-right: 27px;
     padding-left: 20px;
 }
-
+.row.specials {
+    position: relative;
+    z-index:1;
+}
 .list-group-item.active {
     text-transform: inherit;
     background-color: #FBFDFF !important;
@@ -1098,7 +1101,7 @@ header .nav-pills.pull-right a {
     padding: 0 0 0 0px;
     position: relative;
     transition: all 0.2s;
-    margin-bottom: 80px;
+    margin-bottom: 20px;
     margin-right: -1px;
 }
 
@@ -1154,7 +1157,7 @@ header .nav-pills.pull-right a {
 
 #spec-list,
 #inner-spec-list {
-    overflow: hidden;
+
     position: relative;
     margin: 0 -15px;
     padding-left: 14px;
@@ -1274,7 +1277,7 @@ header .nav-pills.pull-right a {
 }
 
 .product .more-actions {
-    position: relative;
+    position: absolute;
     background: rgb(255, 255, 255);
     opacity: 0;
     height: 0px;
@@ -1282,6 +1285,7 @@ header .nav-pills.pull-right a {
     transition: all 0.2s;
     padding-bottom: 2px;
     text-align: center;
+    width: 100%;
 }
 
 .product:hover .thumbnail .more-actions {
@@ -1428,8 +1432,6 @@ footer.well {
 
 #new-list,
 #inner-new-list {
-    overflow: hidden;
-    position: relative;
     margin: 0 -15px;
     padding-left: 14px;
     padding-right: 15px;
@@ -1473,7 +1475,10 @@ footer.well {
     margin: 0;
 
 }
-
+.row {
+    position: relative;
+    z-index: 0;
+}
 .alert-warning {
     background-color: #ffffff;
     border-color: #FAEBCC;
@@ -1730,7 +1735,7 @@ h2[itemprop="name"] {
 }
 
 .owl {
-    overflow: hidden;
+    //overflow-x: hidden;
 }
 
 .owl .product {

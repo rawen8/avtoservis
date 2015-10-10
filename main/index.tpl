@@ -208,8 +208,8 @@
     </div>
     <!--/ Notification -->
 
-    <div class="container">
-        <div class="row">
+    <div class="container" style="overflow: hidden;">
+        <div class="row specials">
             <div class="col-md-12">
                 <div class="main-spec">
                     <div class="page-header">
