@@ -1,0 +1,1 @@
+<a href="/shop/CID_@catalogId@.html" class="list-group-item">@catalogName@</a>

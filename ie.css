@@ -1,0 +1,34 @@
+#brands li {
+	display: inline-block;
+
+}
+#news .panel  {
+	display: inline-block;
+	width: 33%;
+	min-width: 250px;
+}
+#bottom-menu > li {
+	display: inline-block;
+	vertical-align: top;
+	width: 16%;
+	margin-right: 2%;
+	min-width: 170px;
+
+}
+#bottom-menu > li:first-child {
+	min-width: 21%;
+}
+#bottom-menu .contacts >ul > li > div {
+	padding-left: 30px;
+}
+.product .text {
+	display: none;
+}
+.product:hover .text {
+	display: block;
+}
+.product .sale-icon-content {
+	-ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=0.8571673007021123, M12=0.515038074910054, M21=-0.515038074910054, M22=0.8571673007021123, SizingMethod='auto expand')";
+	margin-top: -23%;
+    margin-left: -28%;
+}

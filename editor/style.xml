@@ -1,0 +1,1545 @@
+<?xml version = "1.0" encoding = "windows-1251" ?>
+<style>
+<element>
+    <name>body</name>
+    <description>Задний фон страницы</description>
+	<var>
+    <name>background-image</name>
+	<type>bgimage</type>
+	 <path>images\editor\lib</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+	    <var>
+    <name>background-attachment</name>
+    <description>Фиксирование изображения</description>
+	<type>select</type>
+	   <select>
+	      <value>fixed</value>
+	      <value>scroll</value>
+	   </select>
+    </var>
+	<var>
+    <name>background-color</name>
+	<type>color</type>
+    <description>Цвет фона</description>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+	<var>
+	<name>color</name>
+    <description>Цвет текста</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер текста</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#header_1</name>
+    <description>Полоска над шапкой</description>
+	<content>Небольшая полоска над шапкой</content>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-color</name>
+	<type>color</type>
+    <description>Цвет фона</description>
+    </var>
+ <var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#header_2</name>
+    <description>Шапка</description>
+	<content>Большое изображение во всю длину шапки</content>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-color</name>
+	<type>color</type>
+    <description>Цвет</description>
+    </var>
+ <var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#name_shop div</name>
+    <description>Шапка</description>
+	<content>Изображение покупателя с корзиной в шапке</content>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-color</name>
+	<type>color</type>
+    <description>Цвет</description>
+    </var>
+ <var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#name_shop</name>
+    <description>Заголовок в шапке</description>
+	<content>Название магазина в шапке</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>text-transform</name>
+    <description>Раскладка</description>
+	   <type>select</type>
+	   <select>
+	      <value>uppercase</value>
+	      <value>lowercase</value>
+		  <value>none</value>
+	   </select>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>#slogan</name>
+    <description>Текст в шапке</description>
+	<content>Описание магазина в шапке</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>#demo_link</name>
+    <description>Ссылки в шапке</description>
+	<content>Ссылки в авторизации пользователя</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>a.navigation</name>
+    <description>Главное горизонтальное меню</description>
+	<content>Главное горизонтальное меню страниц "Адрес", "О Компании" и т.д.</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>div.header_bg_2_up_cart</name>
+    <description>Товаров в корзине</description>
+	<content>Активные ссылка оформления заказа в шапке</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>.white2</name>
+    <description>Сумма корзины</description>
+	<content>Сумма товаров в корзине в шапке</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>select</name>
+    <description>Селектор</description>
+	<content>Смена валюты в шапке и т.д.</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>td</name>
+    <description>Общий текст</description>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>a</name>
+    <description>Общие ссылки</description>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+		<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>#bg_catalog_1 td</name>
+    <description>Заголовки блоков</description>
+	<content>Заголовки элементов Специальные предложения, Сейчас покупают и т.д.</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+	<var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>line-height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>#bg_catalog_1</name>
+    <description>Задний фон заголовков</description>
+    <content>Изображение под заголовком</content>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+    <var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-left</name>
+    <description>Отступ слева</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-top</name>
+    <description>Отступ сверху</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#bg_catalog_2</name>
+    <description>Заголовок текстовых блоков</description>
+    <content>Изображение под заголовком</content>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+    <var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-left</name>
+    <description>Отступ слева</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-top</name>
+    <description>Отступ сверху</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>div.textblock_bg</name>
+    <description>Содержание блоков</description>
+	<content>Содержание текстовых блоков</content>
+	<var>
+	<name>color</name>
+    <description>Цвет текста</description>
+	<type>color</type>
+    </var>
+	<var>
+	<name>background-color</name>
+    <description>Цвет фона</description>
+	<type>color</type>
+    </var>
+	<var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+	<var>
+    <name>padding-bottom</name>
+    <description>Отступ снизу</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-top</name>
+    <description>Отступ сверху</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>li.catalog</name>
+    <description>Задний фон закрытых каталогов меню</description>
+    <content>Полоска под нераскрытыми каталогами товаров в меню</content>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+    <var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>ul.catalog li a</name>
+    <description>Ссылки на закрытые каталогов меню</description>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>li.podcatalog</name>
+    <description>Задний фон открытых каталогов меню</description>
+    <content>Полоска под раскрытыми каталогами в меню</content>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+    <var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>li.podcatalog a</name>
+    <description>Ссылки на открытые каталогов меню</description>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>h1</name>
+    <description>Название товара</description>
+	<content>Название товара в подробном описании товара в ссылках типа shop/UID_*.html</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+	<var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>line-height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>a.product_name</name>
+    <description>Ссылки на товар</description>
+	<content>Активная ссылка на товар</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>.price</name>
+    <description>Цена товара</description>
+	<content>Блок цены товара в кратком описании</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>line-height</name>
+    <description>Высота шрифта</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+    <var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>div.price</name>
+    <description>Цена товара в подробном описании</description>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>a.b</name>
+    <description>В корзину к кратком описании</description>
+	<content>Активные ссылки добавления товара в корзину и добавление товара в сравнение</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>div.pod_cart</name>
+    <description>В корзину в подробном описании</description>
+	<content>Активные ссылки добавления товара в корзину и добавление товара в сравнение</content>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>.dynamic-tab-pane-control .tab-page</name>
+    <description>Подробное описание товара</description>
+	<var>
+	<name>color</name>
+    <description>Цвет</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>line-height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+    <var>
+	<name>font-weight</name>
+    <description>Толщина</description>
+	<type>select</type>
+	   <select>
+	      <value>bold</value>
+	      <value>normal</value>
+	   </select>
+    </var>
+	<var>
+	<name>text-align</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>center</value>
+	      <value>left</value>
+		  <value>right</value>
+	   </select>
+    </var>
+</element>
+<element>
+    <name>#header_4</name>
+    <description>Блок поиска</description>
+	<content>Блок поиска в шапке</content>
+	<var>
+    <name>background-image</name>
+	<type>image</type>
+	 <path>images</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+    <var>
+    <name>padding-left</name>
+    <description>Отступ слева</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-top</name>
+    <description>Отступ сверху</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>input.search</name>
+    <description>Строка поиска</description>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+	<var>
+	<name>color</name>
+    <description>Цвет текста</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер текста</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>border-width</name>
+    <description>Ширина рамки</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>border-color</name>
+    <description>Цвет рамки</description>
+	<type>color</type>
+    </var>
+	<var>
+    <name>background-color</name>
+    <description>Цвет заднего фона</description>
+	<type>color</type>
+    </var>
+</element>
+<element>
+    <name>input.but</name>
+    <description>Кнопка</description>
+	<content>Кнопка поиска, авторизации и т.д.</content>
+    <var>
+    <name>border-width</name>
+    <description>Ширина рамки</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>border-color</name>
+    <description>Цвет рамки</description>
+	<type>color</type>
+    </var>
+	<var>
+    <name>background-color</name>
+    <description>Цвет заднего фона</description>
+	<type>color</type>
+    </var>
+	<var>
+	<name>color</name>
+    <description>Цвет текста</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер текста</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>width</name>
+    <description>Длина</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>height</name>
+    <description>Высота</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#bg_footer_2</name>
+    <description>Текст в подвале</description>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+	<var>
+	<name>color</name>
+    <description>Цвет текста</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер текста</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-left</name>
+    <description>Отступ слева</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-top</name>
+    <description>Отступ сверху</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#footer</name>
+    <description>Подвал</description>
+	<var>
+    <name>background-image</name>
+	<type>bgimage</type>
+	<path>images/editor/lib</path> 
+    <description>Изображение</description>
+    </var>
+	<var>
+    <name>background-position</name>
+    <description>Выравнивание</description>
+	<type>select</type>
+	   <select>
+	      <value>top</value>
+	      <value>left</value>
+	      <value>right</value>
+		  <value>center</value>
+	   </select>
+    </var>
+    <var>
+    <name>background-repeat</name>
+    <description>Повтор</description>
+	<type>select</type>
+	   <select>
+	      <value>no-repeat</value>
+	      <value>repeat</value>
+	      <value>repeat-x</value>
+		  <value>repeat-y</value>
+	   </select>
+    </var>
+	<var>
+    <name>background-color</name>
+	<type>color</type>
+    <description>Цвет</description>
+    </var>
+    <var>
+    <name>height</name>
+	<type>size</type>
+    <description>Высота</description>
+    </var>
+	<var>
+    <name>width</name>
+	<type>size</type>
+    <description>Ширина</description>
+    </var>
+	<var>
+    <name>margin-top</name>
+    <description>Отступ сверху</description>
+	<type>size</type>
+    </var>
+	<var>
+	<name>color</name>
+    <description>Цвет текста</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер текста</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#footer a</name>
+    <description>Ссылки в подвале</description>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+	<var>
+	<name>color</name>
+    <description>Цвет текста</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер текста</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-left</name>
+    <description>Отступ слева</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-top</name>
+    <description>Отступ сверху</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>#footer_copyright</name>
+    <description>Копирайт в подвале</description>
+	<var>
+    <name>font-family</name>
+    <description>Шрифт</description>
+	   <type>select</type>
+	   <select>
+	      <value>Tahoma</value>
+	      <value>Helvetica</value>
+		  <value>Sans-serif</value>
+		  <value>Arial</value>
+	   </select>
+    </var>
+	<var>
+	<name>color</name>
+    <description>Цвет текста</description>
+	<type>color</type>
+    </var>
+    <var>
+    <name>font-size</name>
+    <description>Размер текста</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-left</name>
+    <description>Отступ слева</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>padding-top</name>
+    <description>Отступ сверху</description>
+	<type>size</type>
+    </var>
+</element>
+<element>
+    <name>.message</name>
+    <description>Всплывающее сообщение корзины</description>
+	<var>
+	<name>background</name>
+    <description>Цвет фона</description>
+	<type>color</type>
+    </var>
+	<var>
+    <name>height</name>
+	<type>size</type>
+    <description>Высота</description>
+    </var>
+	<var>
+    <name>max-width</name>
+	<type>size</type>
+    <description>Ширина</description>
+    </var>
+	<var>
+    <name>padding</name>
+    <description>Отступ</description>
+	<type>size</type>
+    </var>
+	<var>
+    <name>border-width</name>
+    <description>Размер рамки</description>
+	<type>size</type>
+    </var>
+	<var>
+	<name>order-color</name>
+    <description>Цвет рамки</description>
+	<type>color</type>
+    </var>
+</element>
+<element>
+    <name>.ico_add_to_card</name>
+    <description>Иконка добавления товара в корзину</description>
+	<var>
+	<name>background</name>
+    <description>Цвет фона</description>
+	<type>color</type>
+    </var>
+</element>
+<element>
+    <name>.ico_add_to_compare</name>
+    <description>Иконка добавления товара в сравнение</description>
+	<var>
+	<name>background</name>
+    <description>Цвет фона</description>
+	<type>color</type>
+    </var>
+</element>
+</style>   

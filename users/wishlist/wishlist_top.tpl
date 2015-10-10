@@ -1,0 +1,1 @@
+<a href="#" data-toggle="modal" data-target="#userModal">Отложенные товары (<span class="wishlistcount">@wishlistCount@ шт.</span>)</a>
