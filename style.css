@@ -632,15 +632,7 @@ header {
     padding-right: 0;
 }
 
-.nav > li > a {
-    color: #4f4a49;
-}
-
-.nav > li > a:hover,
-.nav > li > a:focus {
-    background-color: #fff;
-    color: #F90E1F;
-}
+.nav > li > a:hover, .nav > li > a:focus {  background-color: transparent;}
 
 header .col-md-12 {
     margin-bottom: 0;
@@ -656,12 +648,12 @@ header .col-md-12 {
 }
 
 #cartlink .vert-line {
-    border-right: 1px solid #C2C3C4;
+    border-right: 1px solid #FFF;
     display: inline-block;
     width: 16px;
-    height: 19px;
+    height: 26px;
     position: relative;
-    bottom: -2px;
+    bottom: -8px;
 }
 
 #cartlink .label-info {
@@ -794,7 +786,8 @@ form[role="form"] .input-group .btn-info {
 }
 
 #search {
-    border: none;
+    border: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
 }
 
 #search:focus {
@@ -831,9 +824,8 @@ form[role="form"] .input-group .btn-info {
 
 #navbar .dropdown-menu {
     text-transform: none;
-    box-shadow: 0px 0px 3px #999;
     z-index: 0;
-    margin-top: 8px;
+    margin-top: -1px;
     width: 673px;
 }
 
@@ -1810,14 +1802,8 @@ h2[itemprop="name"] {
 
 .form-control {
     box-shadow: none;
-/ / border : none;
     border: 1px solid #7c7c7c;
     border-radius: 0;
-}
-
-form .input-group-btn .btn {
-    background-color: #fff;
-    padding-top: 13px;
 }
 
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
@@ -2238,7 +2224,6 @@ form .input-group-btn .btn {
 
 .top_line .nav > li > a {
     color: #fff;
-    font-family: "MyriadPro-Regular";
     font-size: 14px;
 }
 
@@ -2249,7 +2234,7 @@ header #header {
 
 .top-adr {
     color: #fff;
-    margin-top: 57px;
+    margin-top: 80px;
 }
 
 .logo-wrap {
@@ -2257,7 +2242,17 @@ header #header {
 }
 
 form[action="/search/"] {
-    margin-top: 60px;
+    margin-top: 88px;
+}
+form[action="/search/"] .input-group-btn > button {
+    background-color: #fff;
+    height: 34px;
+    width: 49px;
+    padding: 8px;
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-top: 1px solid #f4f4f4;
+    border-bottom: 1px solid #f4f4f4;
 }
 
 .tel-num {
@@ -2274,7 +2269,18 @@ form[action="/search/"] {
 
 .top_menu {
     background: #262626;
+    height: 58px;
+    font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;
 }
+/* ************************************* */
+.top_menu li.active {
+    background: #353535;
+}
+.top_menu > ul {
+    margin: 0;
+    padding: 0;
+}
+    /* ************************************* */
 
 .top_menu .navbar {
     margin: 0 !important;
@@ -2283,11 +2289,7 @@ form[action="/search/"] {
     border: 0;
 }
 
-.navbar-default .navbar-nav > li > a {
-    color: #fff;
-    font-size: 16px;
-    font-family: "MyriadPro-Regular", Helvetica, Arial, sans-serif;
-}
+//.navbar-default .navbar-nav > li > a {  color: #fff;  font-size: 16px;  font-family: "MyriadPro-Regular", Helvetica, Arial, sans-serif;  }
 
 .top_menu li.home {
     background: url("./images/home_icon.png") no-repeat;
@@ -2296,13 +2298,22 @@ form[action="/search/"] {
     margin: 13px;
 }
 
-.top_menu #navbar > ul > li {
-    padding: 13px 17px;
+.top_menu #navbar > ul > li,
+.top_menu .cart > ul > li {
+    padding: 0;
+
 }
 
-.top_menu #navbar > ul > li > a {
-    padding: 0;
+.top_menu #navbar > ul > li > a,
+.top_menu .cart #cartlink{
+    padding: 13px 17px;
     margin: 0;
+    color: #fff;
+    font-size: 16px;
+    line-height: 32px;
+}
+.top_menu .cart #cartlink {
+    padding: 10.5px 0;
 }
 
 .top_menu #navbar #catalog-dropdown > li a.dropdown-toggle {
@@ -2317,10 +2328,6 @@ form[action="/search/"] {
 .top_menu li.home:hover {
     background-color: rgba(0, 0, 0, 0) !important;
     background: url("./images/home_icon.png") no-repeat !important;
-}
-
-.top_menu #navbar > ul > li a:hover {
-    color: #fff;
 }
 
 .reg {
@@ -2383,9 +2390,6 @@ form[action="/search/"] {
         min-width: 175px
     }
 
-    #cartlink {
-        bottom: 28px;
-    }
 }
 
 @media (max-width: 1000px) {
