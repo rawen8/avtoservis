@@ -56,7 +56,7 @@ body {
 p {
     font-size: 16px;
     line-height: 20px;
-    color: #282828;
+    color: #040404;
 }
 
 a:hover {
@@ -377,11 +377,11 @@ img.template-wishlist-list {
 .more-actions .btn-default:hover,
 .under-photo-options .addToWishList:hover,
 .under-photo-options .addToCompareList:hover {
-    color: #A8A9AB !important;
+    color: #9A9997 !important;
 }
 
 .more-actions .btn-default:hover i:before {
-    color: #A8A9AB !important;
+    color: #9A9997 !important;
 }
 
 .product-tags a {
@@ -437,7 +437,7 @@ label {
 
 /* "Чистые" звездочки */
 #raiting_votes {
-    background: url(images/fullstars_icon.png) no-repeat 2px 0;
+    background: url(images/fullstars_icon_grey.png) no-repeat 2px 0;
     cursor: default;
 }
 
@@ -1071,7 +1071,7 @@ header .nav-pills.pull-right a {
     text-transform: uppercase;
     padding: 0;
     margin: 0px -15px 20px;
-    border-bottom: 1px solid #282828;
+    border-bottom: 1px solid #000000;
     text-align: center;
 }
 
@@ -1123,7 +1123,7 @@ header .nav-pills.pull-right a {
 }
 
 .sale-icon-content .newtip-icon {
-    background: #574A4C;
+    background: #393939;
     position: absolute;
     top: 0;
     left: 0;
@@ -1132,11 +1132,11 @@ header .nav-pills.pull-right a {
 }
 
 .sale-icon-content .newtip-icon:after {
-    border-color: #574A4C transparent transparent transparent;
+    border-color: #393939 transparent transparent transparent;
 }
 
 .sale-icon-content .sale-icon {
-    background: #bc2216;
+    background: #ff0000;
     position: absolute;
     right: 0;
     top: 0;
@@ -1144,7 +1144,7 @@ header .nav-pills.pull-right a {
 }
 
 .sale-icon-content .sale-icon:after {
-    border-color: #bc2216 transparent transparent transparent;
+    border-color: #ff0000 transparent transparent transparent;
 }
 
 #spec-list,
@@ -1158,7 +1158,7 @@ header .nav-pills.pull-right a {
 }
 
 .product h4 {
-    color: #B73030;
+    color: #b9151d;
     font-family: "MyriadPro-Bold", Helvetica, Arial, sans-serif;
     letter-spacing: 0.05em;
     font-size: 16px;
@@ -1191,35 +1191,40 @@ header .nav-pills.pull-right a {
 .product .btn-sale {
     background-color: rgb(255, 255, 255);
     transition: all 0.2s;
-    color: #535353;
+    color: #000000;
 }
 
 .product .btn-sale h3 {
     text-align: center;
     line-height: 36px;
     margin-bottom: 0px;
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 17px;
+    font-family: "MyriadPro-Bold";
+    //font-weight: bold;
     margin-top: 0;
     width: 99%;
     transition: all 0.2s;
 }
 
 .product .btn-sale h3 .text-muted {
-    color: #535353;
+    color: #918d8d;
+    font-family: "MyriadPro-Bold";
     vertical-align: bottom;
     margin-left: 5px;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
-    line-height: 22px;
+    line-height: 25px;
     transition: all 0.2s;
+}
+.product .btn-sale h3 .text-muted > span {
+    position: relative;
+    top: 6px;
+    font-family: "MyriadPro-Bold";
 }
 
 .product .addToCartList {
     display: block;
-    background-image: url(images/chess.png);
-    background-position: 0 0px;
-    background-color: #3A3B3C;
+    background-color: #262626;
     margin: 0px;
     padding: 0px;
     border: none;
@@ -1232,7 +1237,7 @@ header .nav-pills.pull-right a {
 
 .product .addToCartList:hover {
     background-image: none;
-    background-color: #356579;
+    background-color: #F80000;
 }
 
 .product .addToWishList {
@@ -1281,8 +1286,7 @@ header .nav-pills.pull-right a {
 }
 
 .product:hover .thumbnail .more-actions {
-
-    background-color: #696969;
+    background-color: #393939;
     background-position: 0px 0;
     opacity: 1;
     height: 70px;
@@ -1874,7 +1878,7 @@ h2[itemprop="name"] {
 }
 
 .copyright * {
-    color: #B3B1B1 !important;
+    color: #8a8a8a !important;
     text-align: left !important;
     font-size: 14px !important;
 }
