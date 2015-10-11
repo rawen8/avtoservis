@@ -1,6 +1,6 @@
-<li class="dropdown dropdown-right" id="sub-@catalogId@">
-    <a href="/shop/CID_@catalogId@@nameLat@.html" class="leftCatNt@catalogId@ dropdown-toggle list-group-item" data-toggle="dropdown">@catalogName@<i class="fa  fa-angle-right"></i></a>
-    <ul class="dropdown-menu dropdown-menu-right">
+<li class="" id="sub-@catalogId@">
+    <a href="#@catalogId@" class="leftCatNt@catalogId@ list-group-item list-group-item-success"  data-toggle="collapse" data-parent="catalog-menu">@catalogName@<i class="fa  fa-angle-right"></i></a>
+    <ul class="collapse" id="@catalogId@">
         @catalogPodcatalog@
     </ul>
 </li>

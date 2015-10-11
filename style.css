@@ -88,14 +88,12 @@ a#faset-filter-reset span {
 }
 
 .dropdown-menu-right {
-    width: 353% !important;
-    right: -353% !important;
+    width: 100% !important;
     border: none;
     box-shadow: none;
     border-radius: 0;
     min-height: 250px;
-    position: absolute;
-    top: -1px;
+    position: relative;
     margin-top: 0;
 }
 
@@ -319,21 +317,15 @@ a.template-product-name {
     z-index: 999999;
 }
 
-.dropdown-menu-right > li {
-    display: inline-block;
-    margin-bottom: 5px;
-}
 
-.dropdown-menu-right > li a {
-    padding: 0 5px;
-    display: inline-block;
-    font-size: 14px;
-}
+
+
 
 #catalog-menu .template-menu-line {
-    width: 25%;
+
     vertical-align: top;
 }
+
 
 #catalog-menu .template-menu-line a,
 #catalog-menu .dropdown-menu-right > li a {
@@ -724,18 +716,66 @@ header .background {
 }
 
 a.list-group-item {
-    background-color: #fbfdff;
+    background-color: transparent;
     color: #282828;
-    padding: 6px 13px 8px 17px;
+    padding: 0 30px 0 30px;
+    position: relative;
     font-size: 14.5px;
     letter-spacing: 0.05em;
-    margin-top: 1px;
+
     border-radius: 0;
     border: none;
-    height: 35px;
+    height: 40px;
+    line-height: 40px;
     font-weight: bold;
 }
+a.list-group-item .fa {
+    line-height: 40px;
+    height: 40px;
+    width:40px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    margin-top: -20px;
 
+}
+#catalog-menu li.template-menu-line {
+    list-style: none;
+}
+#catalog-menu li.template-menu-line a {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    font-weight: normal;
+}
+a.list-group-item:hover,
+a.list-group-item:focus{
+
+    color: #333;
+    background-color: #b5b5b5;
+
+}
+a.list-group-item:hover + ul,
+a.list-group-item:focus + ul{
+
+    background-color: #b5b5b5;
+
+}
+a.list-group-item:hover:before,
+a.list-group-item:focus:before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    margin-top: -10px;
+    height: 20px;
+    border: 1px solid #333;
+}
+.template-menu-line ul {
+    display: none;
+}
 header img.logo {
     width: 214px;
     height: 182px;
@@ -880,8 +920,7 @@ form[role="form"] .input-group .btn-info {
     position: relative;
     z-index: 15;
     border: 1px solid #DDDEE0;
-    margin-left: 17px;
-    margin-right: -7px;
+
     padding-bottom: 1px;
     background: #fbfdff;
     border-radius: 0;
@@ -932,6 +971,8 @@ form[role="form"] .input-group .btn-info {
 #catalog-menu {
     position: relative;
     margin-top: 0;
+    padding: 20px 0;
+    background-color: #e5e5e5;
 }
 
 #catalog-menu li {
