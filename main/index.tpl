@@ -61,20 +61,25 @@
     <!-- Header -->
     <header class="visible-lg visible-md">
         <div class="top_line">
-            <div class="col-md-6 col-sm-6">
-                <ul class="page-catal">
-                    @pageCatal@
-                </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="page-catal">
+                            @pageCatal@
+                        </ul>
+                    </div>
+                    <div class="col-md-6 col-sm-6">
+                        <ul class="nav nav-pills pull-right">
+                            @usersDisp@
+                            <li role="presentation">
+                                <a href="/compare/">Сравнить товары (<span id="numcompare">@numcompare@</span> шт.)</a>
+                            </li>
+                            <li role="presentation">@wishlist@</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 col-sm-6">
-                <ul class="nav nav-pills pull-right">
-                    @usersDisp@
-                    <li role="presentation">
-                        <a href="/compare/">Сравнить товары (<span id="numcompare">@numcompare@</span> шт.)</a>
-                    </li>
-                    <li role="presentation">@wishlist@</li>
-                </ul>
-            </div>
+
         </div>
 
         <!--HEADER_начало-->
@@ -96,8 +101,8 @@
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-4">
-                        <form action="/search/" role="search" method="post">
-                            <div class="input-group pull-right">
+                        <form class="pull-right" action="/search/" role="search" method="post">
+                            <div class="input-group">
                                 <input name="words" maxlength="50" id="search" class="form-control"
                                        placeholder="Поиск.." required="" type="search" data-trigger="manual"
                                        data-container="body" data-toggle="popover" data-placement="bottom"
@@ -113,13 +118,30 @@
             </div>
 
         </div>
-        <!--ГЛАВНОЕ МЕНЮ - ВАР.2-->
-        <nav class="top_menu">
+    </header><!--/ Header -->
+
+    <!--ГЛАВНОЕ МЕНЮ - ВАР.2-->
+    <div class="top_menu">
+        <div class="nav navbar-default" role="navigation" id="navigation">
             <div class="container">
-                <div class="row" role="navigation" id="navigation">
-                    <div id="navbar" class="collapse navbar-collapse">
-                        <ul class="nav navbar-nav pull-left">
-                        <li class="home visible-lg visible-md">
+                <div class="row">
+                <div class="navbar-header">
+                    <a class="navbar-brand visible-xs" href="tel:@telNum@">
+                        <span class="glyphicon glyphicon-phone"></span> @telNum@
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                            data-target="#navbar"
+                            aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div id="navbar" class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav pull-left">
+                        <li class="home hidden-xs">
                             <a class="home-link" href="/"
                                title="Домой"></a>
                         </li>
@@ -156,106 +178,26 @@
                         <li class="visible-xs"><a href="/price/">Прайс-лист</a></li>
                         <li class="visible-xs"><a href="/map/">Карта сайта</a></li>
                     </ul>
-                        <div class="pull-right cart">
-                            <ul class="nav navbar-nav visible-lg visible-md">
-                                <li>
-                                    <a id="cartlink" data-trigger="click" data-container="body" data-toggle="popover"
-                                       data-placement="bottom" data-html="true" data-url="/order/"
-                                       data-content='@visualcart@'>
+                    <div class="pull-right cart">
+                        <ul class="nav navbar-nav hidden-xs">
+                            <li>
+                                <a id="cartlink" data-trigger="click" data-container="body" data-toggle="popover"
+                                   data-placement="bottom" data-html="true" data-url="/order/"
+                                   data-content='@visualcart@'>
                                         <span class="visible-lg-inline"><span id="num"
                                                                               class="label label-info">@num@</span> товаров - </span>
-                                        <span id="sum" class="label label-info">@sum@</span>@productValutaName@<span
-                                                class="vert-line"></span><img src="../images/cart_icon.png" alt=""/>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
+                                    <span id="sum" class="label label-info">@sum@</span>@productValutaName@<span
+                                            class="vert-line"></span><img src="../images/cart_icon.png" alt=""/>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
+                </div>
             </div>
-
-        </nav>
-        <br>
-        <!--.ГЛАВНОЕ МЕНЮ - ВАР.2-->
-        <nav class="top_menu">
-            <div class="container">
-                <nav class="navbar navbar-default" role="navigation" id="navigation">
-                    <div class="navbar-header">
-                        <a class="navbar-brand visible-xs" href="tel:@telNum@">
-                            <span class="glyphicon glyphicon-phone"></span> @telNum@
-                        </a>
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-                                data-target="#navbar"
-                                aria-expanded="false" aria-controls="navbar">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                    </div>
-                    <div class="row">
-                        <div id="navbar" class="collapse navbar-collapse col-md-6">
-                            <ul class="nav navbar-nav col-md-12 pull-right">
-                                <!-- dropdown catalog menu -->
-                                <li class="active home visible-lg visible-md">
-                                    <a class="home-link" href="/"
-                                       title="Домой"></a>
-                                </li>
-                                <li id="catalog-dropdown" class="dropdown visible-lg visible-md visible-sm">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                        Каталог
-                                    </a>
-                                    <ul class="dropdown-menu mega-menu">
-                                        @leftCatal@
-                                    </ul>
-                                </li>
-                                <!-- dropdown catalog menu mobile-->
-                                <li class="dropdown visible-xs">
-                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                                       aria-expanded="false">Каталог<span
-                                                class="caret"></span></a>
-                                    <ul class="dropdown-menu" role="menu">
-                                        @menuCatal@
-                                    </ul>
-                                </li>
-                                <li class="newtip">
-                                    <a href="/newtip">Новинки</a>
-                                </li>
-                                <li class="spec">
-                                    <a href="/spec">Спецпредложения</a>
-                                </li>
-                                <!--@topMenu@-->
-
-                                <li class="visible-xs"><a href="/users/wishlist.html">Отложенные товары</a></li>
-                                <li class="visible-xs"><a href="/news/">Новости</a></li>
-                                <li class="visible-xs"><a href="/gbook/">Отзывы</a></li>
-                                <li class="visible-xs"><a href="/price/">Прайс-лист</a></li>
-                                <li class="visible-xs"><a href="/map/">Карта сайта</a></li>
-
-                            </ul>
-                            <!--/.nav-collapse -->
-                        </div>
-                        <div class="col-md-6 pull-right">
-                            <ul class="nav navbar-nav navbar-right visible-lg visible-md">
-                                <li>
-                                    <a id="cartlink" data-trigger="click" data-container="body" data-toggle="popover"
-                                       data-placement="bottom" data-html="true" data-url="/order/"
-                                       data-content='@visualcart@'>
-                                        <span class="visible-lg-inline"><span id="num"
-                                                                              class="label label-info">@num@</span> товаров - </span>
-                                        <span id="sum" class="label label-info">@sum@</span>@productValutaName@<span
-                                                class="vert-line"></span><img src="../images/cart_icon.png" alt=""/>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
-            </div>
-        </nav>
-
-    </header>
-    <!--/ Header -->
+        </div>
+    </div>
+    <!--.ГЛАВНОЕ МЕНЮ - ВАР.2-->
 
     <!-- Fixed navbar -->
     <!--ПАНЕЛЬ НАВИГАЦИИ_НАЧАЛО-->
@@ -322,7 +264,7 @@
         <div class="row">
             <div class="col-md-12">
 
-                <div class="visible-xs visible-sm">@leftCatalTable@</div>
+
                 <div class="page-header">
                     <h2>Новинки</h2>
                 </div>
@@ -338,7 +280,7 @@
                 <div id="new-list">
                     <div class="main-content">@mainContent@</div>
                 </div>
-
+                <div class="visible-xs visible-sm">@leftCatalTable@</div>
                 <!-- toTop -->
                 <div class="visible-lg visible-md">
                     <a href="#" id="toTop"><span id="toTopHover"></span>Наверх</a>

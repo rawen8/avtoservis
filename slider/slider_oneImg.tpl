@@ -3,7 +3,7 @@
     <a href="@link@"><img src="@image@" alt="@alt@">
         <div class="carousel-caption">
             @alt@
-            <div class="more-link">Узнать больше</div>
+            <div class="more-link">Подробнее..</div>
         </div>
     </a>
 </div>
