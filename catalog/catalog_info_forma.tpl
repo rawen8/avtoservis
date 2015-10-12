@@ -7,9 +7,9 @@
     @breadCrumbs@
 </ol>
 
-<div class="page-header hidden-xs">
+<!-- <div class="page-header hidden-xs">
     <h2>@catalogName@</h2>
-</div>
+</div> -->
 
 
 <div class="hidden-xs">@catalogContent@</div>

@@ -381,7 +381,7 @@
 									$('<div' + att.id + ' class="jq-selectbox jqselect' + att.classes + '" style="display: inline-block; position: relative; z-index:' + singleSelectzIndex + '">' +
 											'<div class="jq-selectbox__select"' + att.title + ' style="position: relative">' +
 												'<div class="jq-selectbox__select-text"></div>' +
-												'<div class="jq-selectbox__trigger"><div class="jq-selectbox__trigger-arrow"></div></div>' +
+												'<div class="jq-selectbox__trigger"><i class="fa fa-chevron-down"></i><div class="jq-selectbox__trigger-arrow"></div></div>' +
 											'</div>' +
 										'</div>');
 

@@ -55,136 +55,161 @@
 
 
   <!-- Header -->
-  <header class="container visible-lg visible-md">
-    <!--ПАНЕЛЬ ТЕЛЕФОН / ГРАФИК_начало-->
-    <div class="row vertical-align">
-      <div class="col-md-12">
-        <div class="row topbar">
-          <div class="col-md-12">
-            <ul class="nav nav-pills pull-left">
-              <span class="telnum"><i class="fa fa-phone"></i> @telNum@</span> <span class="worktime">пнд-птн: 10:00-19:00</span>
+  <header class="visible-lg visible-md">
+    <div class="top_line">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <ul class="page-catal">
+              @pageCatal@
             </ul>
+          </div>
+          <div class="col-md-6 col-sm-6">
             <ul class="nav nav-pills pull-right">
               @usersDisp@
+              <li role="presentation">
+                <a href="/compare/">Сравнить товары (<span id="numcompare">@numcompare@</span> шт.)</a>
+              </li>
               <li role="presentation">@wishlist@</li>
-			  <li role="presentation"><a href="/compare/"> Сравнить (<span id="numcompare">@numcompare@</span>)</a></li>
             </ul>
           </div>
         </div>
       </div>
+
     </div>
-    <!--ПАНЕЛЬ ЛОГО_начало-->
-    <div class="row">
-      <div class="col-md-12 background gradient logopanel">
-        <div class="background-inner">
-          <div class="col-md-4">
-            <h4 class="pull-left">Системы бесперебойного питания</h4>
+
+    <!--HEADER_начало-->
+    <div id="header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-4">
+            <div class="top-adr">
+              <span class="tel-num"><i class="fa fa-phone"></i> @telNum@</span>
+
+              <div>
+                <span class="shedule-days">ПНД-ПТН: 10:00 - 19:00</span> <span class="mail-adr">@adminMail@</span>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4 text-center">
-            <a href="/"><img  class="logo" src="@logo@" alt="@name@" border="0" alt="@name@" ></a>
-            <!-- <i class="fa fa-envelope"></i>
-             <div>напишите нам</div>
-             <div class="info">@adminMail@</div>-->
+          <div class="col-md-4 col-sm-4 text-center">
+            <div class="logo-wrap">
+              <a href="/">
+                <img class="logo" src="@logo@" alt="@name@" border="0" alt="@name@">
+              </a>
+            </div>
           </div>
-          <div class="col-md-4 ">
-            <h4 class="pull-right">10 лет успешной работы</h4>
+          <div class="col-md-4 col-sm-4">
+            <form class="pull-right" action="/search/" role="search" method="post">
+              <div class="input-group">
+                <input name="words" maxlength="50" id="search" class="form-control"
+                       placeholder="Поиск.." required="" type="search" data-trigger="manual"
+                       data-container="body" data-toggle="popover" data-placement="bottom"
+                       data-html="true" data-content="">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="submit"><span
+                                                  class="glyphicon glyphicon-search"></span></button>
+                                    </span>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-    </div>
-    <br>
-    <!--ПАНЕЛЬ КОРЗИНА_начало-->
-    <!--	<div class="navbar-collapse collapse vertical-align">
-        <ul class="nav navbar-nav navbar-right visible-lg visible-md">
-          <li>
-            <a id="cartlink" data-trigger="click" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-url="/order/" data-content='@visualcart@'>
-              <span class="visible-lg-inline"><span id="num" class="label label-info">@num@</span> товаров на </span>
-              <span id="sum" class="label label-info">@sum@</span>@productValutaName@<span class="vert-line"></span><img src="../images/cart_icon.png" alt=""/>
-            </a>
-          </li>
-                </ul>
-            </div> -->
 
+    </div>
   </header>
   <!--/ Header -->
 
   <!-- Fixed navbar -->
-  <!--ПАНЕЛЬ НАВИГАЦИИ_НАЧАЛО-->
-  <div class="container">
-    <nav class="navbar navbar-default" role="navigation" id="navigation">
+  <!--ПАНЕЛЬ НАВИГАЦИИ-->
 
-      <div class="navbar-header">
-
-        <a class="navbar-brand visible-xs" href="tel:@telNum@">
-          <span class="glyphicon glyphicon-phone"></span> @telNum@
-        </a>
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-
-      </div>
-      <div class="col-md-3 col-sm-3">
-        <form method="post" role="search" action="/search/">
-          <div class="input-group">
-            <input id="search" class="form-control" type="search" data-content="" data-html="true" data-placement="bottom" data-toggle="popover" data-container="body" data-trigger="manual" required="" placeholder="Я ищу..." maxlength="50" name="words" data-original-title="" title=""></input>
-                                    <span class="input-group-btn">
-                                        <button class="btn" type="submit">
-                                            <span class="glyphicon glyphicon-search">
-                                            </span>
-                                        </button>
-                                    </span>
+  <div class="top_menu">
+    <div class="nav navbar-default" role="navigation" id="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="navbar-header">
+            <a class="navbar-brand visible-xs" href="tel:@telNum@">
+              <span class="glyphicon glyphicon-phone"></span> @telNum@
+            </a>
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#navbar"
+                    aria-expanded="false" aria-controls="navbar">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
           </div>
-        </form>
-      </div>
 
-      <div id="navbar" class="collapse navbar-collapse col-md-6">
-        <ul class="nav navbar-nav col-md-12 pull-right">
-          <!-- dropdown catalog menu -->
-          <li id="catalog-dropdown" class="dropdown visible-lg visible-md visible-sm">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">КАТАЛОГ
-            </a>
-            <ul class="dropdown-menu mega-menu">
-              @leftCatal@
+          <div id="navbar" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav pull-left">
+              <li class="home hidden-xs">
+                <a class="home-link" href="/"
+                   title="Домой"></a>
+              </li>
+              <!-- dropdown catalog menu -->
+              <li id="catalog-dropdown" class="dropdown visible-lg visible-md visible-sm">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  Каталог
+                </a>
+                <ul class="dropdown-menu mega-menu">
+                  @leftCatal@
+                </ul>
+              </li>
+              <!-- .dropdown catalog menu -->
+
+              <!-- dropdown catalog menu mobile-->
+              <li class="dropdown visible-xs">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                   aria-expanded="false">Каталог<span
+                          class="caret"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  @menuCatal@
+                </ul>
+              </li>
+              <li class="newtip">
+                <a href="/newtip">Новинки</a>
+              </li>
+              <li class="spec">
+                <a href="/spec">Спецпредложения</a>
+              </li>
+              @topMenu@
+
+              <li class="visible-xs"><a href="/users/wishlist.html">Отложенные товары</a></li>
+              <li class="visible-xs"><a href="/news/">Новости</a></li>
+              <li class="visible-xs"><a href="/gbook/">Отзывы</a></li>
+              <li class="visible-xs"><a href="/price/">Прайс-лист</a></li>
+              <li class="visible-xs"><a href="/map/">Карта сайта</a></li>
             </ul>
-          </li>
-          @topBrands@
-          <!-- dropdown catalog menu mobile-->
-          <li class="dropdown visible-xs">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Каталог<span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              @menuCatal@
-            </ul>
-          </li>
-
-          @topMenu@
-          <li class="visible-xs"><a href="/users/wishlist.html">Отложенные товары</a></li>
-          <li class="visible-xs"><a href="/news/">Новости</a></li>
-          <li class="visible-xs"><a href="/gbook/">Отзывы</a></li>
-          <li class="visible-xs"><a href="/price/">Прайс-лист</a></li>
-          <li class="visible-xs"><a href="/map/">Карта сайта</a></li>
-          <li class="about-company">
-            <a href="#">О компании</a>
-          </li>
-        </ul>
-        <!--/.nav-collapse -->
+            <div class="pull-right cart">
+              <ul class="nav navbar-nav hidden-xs">
+                <li>
+                  <a id="cartlink" data-trigger="click" data-container="body" data-toggle="popover"
+                     data-placement="bottom" data-html="true" data-url="/order/"
+                     data-content='@visualcart@'>
+                    <div class="bl1">
+                                            <span class="visible-lg-inline">
+                                            <span id="num"
+                                                  class="label label-info">@num@</span>
+                                            товаров -
+                                        </span>
+                      <span id="sum" class="label label-info">@sum@</span>
+                      @productValutaName@
+                      <span class="vert-line"></span>
+                    </div>
+                    <div class="cart-icon bl2">
+                      <img src="../images/cart_icon.png" alt=""/></div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-3 pull-right">
-        <ul class="nav navbar-nav navbar-right visible-lg visible-md">
-          <li>
-            <a id="cartlink" data-trigger="click" data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-url="/order/" data-content='@visualcart@'>
-              <span class="visible-lg-inline"><span id="num" class="label label-info">@num@</span> товаров на </span>
-              <span id="sum" class="label label-info">@sum@</span>@productValutaName@<span class="vert-line"></span><img src="../images/cart_icon.png" alt=""/>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-
-    </nav>
+    </div>
   </div>
+  <!--.ПАНЕЛЬ НАВИГАЦИИ-->
+
+
 
 <div class="clr"></div>
   <!-- VisualCart Mod -->
@@ -204,21 +229,20 @@
 
         <!-- Меню дублирующих категорий -->
         <ul class="list-group" id="catalog-menu">
-            <li class="list-group-item active"><i class="fa fa-bars"></i>Каталог оборудования</li>
-            @leftCatalNt@
+          @leftCatalNt@
         </ul>
         <!--/ Меню дублирующих категорий -->
-		
-          <div id="guaranty" class="">
-              <div class="row">
-                  <div class="col-md-7">
-                      <p>Гарантируем возврат в течении <br><span class="term">30 дней</span></p>
-                  </div>
-                  <div class="col-md-5 stamp">
-                      <img src="../images/garantiya.png">
-                  </div>
-              </div>
+
+        <div id="guaranty">
+          <div class="row">
+            <div class="col-md-7 guar-title">
+              <p>Гарантируем возврат в течении <br><span class="term">30 дней</span></p>
+            </div>
+            <div class="col-md-5 stamp">
+              <img src="../images/garantiya.png">
+            </div>
           </div>
+        </div>
 
         <!-- Фасетный фильтр -->
         <div class="panel panel-info" id="faset-filter">
@@ -249,25 +273,20 @@
           </div>
         </div>
         <!--/ Фасетный фильтр -->
-        @oprosDisp@
-        @cloud@
+
         @productlastview@
-
-
-
       </div>
 
       <div class="bar-padding-top-fix visible-xs visible-sm"> </div>
-      <div class="col-md-9 col-xs-12 main border-bottom">
+      <div class="col-md-9 col-xs-12 border-bottom main main-catalog">
         @DispShop@
       </div>
-
-
     </div>
+
     <div class="page-header">
-      <h2>Новые поступления</h2>
+      <h2>Новинки</h2>
     </div>
-    <div id="inner-new-list">
+    <div id="new-list">
       <div class="owl">
         @specMainIcon@
       </div>
@@ -275,29 +294,32 @@
       <a class="owl-carousel-control right"></a>
     </div>
 
-
     <!-- toTop -->
     <div class="visible-lg visible-md">
       <a href="#" id="toTop"><span id="toTopHover"></span>Наверх</a>
     </div>
     <!--/ toTop -->
-
-    <footer class="footer well visible-lg visible-md">
+  </div>
+  <footer class="footer well visible-lg visible-md">
+    <div class="">
       <ul id="bottom-menu">
         <li class="contacts">
           <div class="group">Контакты</div>
           <ul>
             <li>
-              <i class="fa  fa-align-left"></i>
+              <i class="fa fa-map-marker"></i>
+
               <div>@streetAddress@</div>
             </li>
             <li>
               <i class="fa fa-phone"></i>
+
               <div class="info">@telNum@</div>
               <div class="info">ПН-ПТН: 10:00 - 19:00</div>
             </li>
             <li>
               <i class="fa fa-envelope"></i>
+
               <div class="info">@adminMail@</div>
             </li>
           </ul>
@@ -340,8 +362,8 @@
           </ul>
         </li>
       </ul>
-    </footer>
-  </div>
+    </div>
+  </footer>
 
   <!-- Модальное окно мобильного поиска -->
   <div class="modal fade bs-example-modal-sm" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
