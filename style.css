@@ -374,9 +374,7 @@ img.template-wishlist-list {
 
 .pull-left .more-actions .addToWishList:hover,
 .pull-left .more-actions .addToCompareList:hover,
-.more-actions .btn-default:hover,
-.under-photo-options .addToWishList:hover,
-.under-photo-options .addToCompareList:hover {
+.more-actions .btn-default:hover {
     color: #9A9997 !important;
 }
 
@@ -525,22 +523,21 @@ input.reqActiv, select.reqActiv {
 }
 
 #fotoload {
-    width: 300px;
+    //width: 100%;
+   // max-width: 340px;
     margin-bottom: 10px;
 
 }
 
 #fotoload a.highslide img {
-    max-width: 700px !important;
-    margin-top: 8px;
-    margin-left: 6px;
+    width: 100%;
+    max-width: 340px !important;
 }
 
 #fotoload img.imgOn, #fotoload img.imgOff {
     max-width: 100px;
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
-    border-radius: 5px;
 }
 
 img.imgOff {
@@ -697,6 +694,7 @@ header .col-md-12 {
     background: none;
     color: #fff;
     font-size: 16px;
+    font-weight: normal;
 }
 
 #cartlink img {
@@ -1622,56 +1620,31 @@ footer.well {
     padding-top: 8px;
 }
 
-#iteminfo .alert {
-    margin: 0px;
-    padding: 0px;
-    margin-left: -34px;
-}
-
-#iteminfo {
-    border-top: 1px solid #000;
-}
-
-#iteminfo .col-md-7 {
-    padding-left: 74px;
-    width: 62.333%;
-}
-
 #iteminfo .col-md-5 {
-    width: 34.667%;
+    width: 39.667%;
 }
-
+#iteminfo .col-md-7 {
+    width: 59.337%;
+}
+#iteminfo .row2 {
+    margin-left: -15px;
+}
+.product-full #raiting_votes {
+    background: transparent url("images/fullstars_icon.png") no-repeat scroll 2px 0px;
+}
+#iteminfo .users-opt {
+    color: #666666;
+}
+#iteminfo .users-opt i {
+    margin: 0 5px;
+}
 .table-optionsDisp .jq-selectbox {
     width: 158px;
-}
-
-.btn-warning {
-    font-family: "MyriadPro-Bold", Helvetica, Arial, sans-serif;
-    background: none;
-    color: #555;
-    border: none;
-}
-
-.btn-warning:hover {
-    background: none;
-    border: none;
-    color: #555;
 }
 
 .orderinfo {
     margin: 10px 0px;
     height: 65px;
-}
-
-.orderinfo > div {
-    padding: 0;
-    margin-top: 21px;
-}
-
-.btn-default {
-    text-transform: uppercase;
-    font-weight: bold;
-    font-family: Awesome, Helvetica, Arial, sans-serif;
 }
 
 .orderinfo .btn-warning > h3 {
@@ -1715,95 +1688,55 @@ footer.well {
     border-left: 1px solid #DDD;
     margin-top: 4px;
 }
-
-.input-group-btn .addToCartList {
-    height: 40px;
-    width: 126px;
-    color: #fff;
-    font-size: 17px;
-
-    background-color: #282828;
+.cart-actions .addToCartList:hover {
+    color: #ffffff;
+    background-color: #ff2e2e;
+    border-color: transparent;
 }
 
-.input-group-btn .addToCartList:hover {
-    color: #333;
-}
-
-.orderinfo div[itemprop="offers"] {
-    width: 231px;
-    height: 65px;
-}
-
-.orderinfo div[itemprop="offers"] .btn-warning {
-    padding: 0;
-    margin-top: -11px;
-}
-
-.orderinfo div[itemprop="offers"] .btn-warning span {
-    font-size: 16px;
-    line-height: 50px;
-}
-
-.orderinfo div[itemprop="offers"] .btn-warning .defprice span {
-    font-size: 19px;
-}
-
-.alert-warning {
-    border: none;
-}
 
 .specprice {
-    color: #F90E1F;
+    color: #15100d;
+    font-size: 25px;
+    font-weight: bold;
 }
-
 
 .btn {
     border-radius: 0px;
 }
 
-.specprice {
-    font-size: 15px;
-    font-weight: bold;
-}
-
 .defprice {
-    font-size: 12px;
-
-    padding-left: 5px;
     font-size: 20px;
+    color: #bbbbbb;
+    font-weight: bold;
+    padding-left: 5px;
 }
 
 .instock {
     font-size: 14px;
+    color: #666666;
+}
+
+.product-full .row1 h2 {
+    color: #000000;
+    font: 22px "MyriadPro-Regular";
     text-transform: uppercase;
-    color: #222126;
-    line-height: 50px;
-    margin-top: -9px;
 }
-
-h2[itemprop="name"] {
-    margin-top: 17px;
-    font: 24px MyriadPro-BoldCond;
-    margin-left: -4px;
+.product-full .row1 {
+    border-top: 1px solid #e3e3e3;
 }
-
 .share42init {
-    margin-top: 14px;
-    clear: both;
+    margin-top: 25px;
 }
+.product-full .addToWishList,
+.product-full .addToCompareList {
+    cursor: pointer;
+}
+
 
 #fotoload {
     margin: 0px auto;
     margin-top: 16px;
-}
-
-.under-photo-options .addToWishList,
-.under-photo-options .addToCompareList {
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    color: #c6c6c6;
-    margin-top: 27px;
 }
 
 #fotoload .col-xs-6 {
@@ -2011,10 +1944,6 @@ h2[itemprop="name"] {
     bottom: 2px;
 }
 
-#raiting_star {
-    margin-top: 18px;
-}
-
 .minides {
     margin-top: 16px;
 }
@@ -2075,28 +2004,6 @@ h2[itemprop="name"] {
     width: 100%;
 }
 
-.cart-actions {
-    background-color: #282828;
-    background-image: url("images/chess.png");
-    color: #FFF;
-}
-
-.orderinfo .cart-actions {
-    height: 40px;
-    width: 125px;
-    background-image: none;
-    background-color: #fff;
-    top: 80px;
-    left: -127px;
-    text-transform: uppercase;
-    font-family: "MyriadPro-Cond", Helvetica, Arial, sans-serif;
-    letter-spacing: 1px;
-    font-size: 18px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 0px;
-}
-
 .orderinfo #button-cart {
     font-family: "MyriadPro-Regular", Helvetica, Arial, sans-serif !important;
     font-size: 13px;
@@ -2106,22 +2013,31 @@ h2[itemprop="name"] {
     padding-top: 0px;
     padding-bottom: 1px;
 }
-
+.cart-actions .addToCartListNum {
+    max-width: 70px;
+    height: 48px;
+    float: left;
+}
 .cart-actions a {
     text-decoration: none;
     color: #ffffff;
 }
-
-.main .visible-md {
-    padding-top: 51px;
+.cart-actions button.addToCartList,
+.cart-actions a {
+    color: #fff;
+    font-size: 17px;
+    height: 48px;
+    width: 128px;
+    background-color: #262626;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 2px;
 }
-
-.under-photo-options .col-md-6 {
-    padding-top: 0px;
+.cart-actions button.addToCartList i {
+    margin-right: 15px;
 }
 
 .notify {
-
     margin: 0px;
     padding: 0px;
     border: medium none;
@@ -2466,7 +2382,7 @@ form[action="/search/"] .input-group-btn > button {
 #cartlink .bl2 {
     display: inline-block;
     padding: 2.5px 0;
-    margin: 10.5px 0;
+    margin: 10.5px 4px 10.5px 0;
 }
 #cartlink .bl1 {
     border-right: 1px solid rgba(255,255,255,0.5);
@@ -2477,7 +2393,7 @@ form[action="/search/"] .input-group-btn > button {
     border-radius: 21px;
     height: 42px;
     width: 42px;
-    margin: 5.5px 0;
+    margin: 5.5px 0 5.5px 0;
     position: relative;
     top: -3px;
 }

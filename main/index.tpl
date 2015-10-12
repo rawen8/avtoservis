@@ -288,6 +288,18 @@
                 </div>
 
                 <div class="page-header">
+                    <h2>Сейчас покупают</h2>
+                </div>
+                <div id="new-list">
+                    <div class="owl">
+                        @nowBuy@
+                    </div>
+                    <a class="owl-carousel-control left"></a>
+                    <a class="owl-carousel-control right"></a>
+                </div>
+
+
+                <div class="page-header">
                     <h2>О нас</h2>
                 </div>
                 <div id="new-list">
