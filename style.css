@@ -270,7 +270,15 @@ table.table-optionsDisp td {
     margin-left: -35px;
     margin-top: 69px;
 }
-
+.tovar_optionsDisp .table-optionsDisp {
+    top: 0;
+    margin: 0;
+    position: static;
+}
+.tovar_optionsDisp .table-optionsDisp > tbody > tr {
+    display: block;
+    float: left;
+}
 .news-list a:hover, .template-product-name:hover {
     text-decoration: none;
 }
@@ -1643,8 +1651,7 @@ footer.well {
 }
 
 .orderinfo {
-    margin: 10px 0px;
-    height: 65px;
+
 }
 
 .orderinfo .btn-warning > h3 {
@@ -1693,11 +1700,13 @@ footer.well {
     background-color: #ff2e2e;
     border-color: transparent;
 }
+.prod-row {
 
+}
 
 .specprice {
     color: #15100d;
-    font-size: 25px;
+    font-size: 26px;
     font-weight: bold;
 }
 
@@ -2012,6 +2021,9 @@ footer.well {
     display: block;
     padding-top: 0px;
     padding-bottom: 1px;
+}
+.cart-actions {
+    padding-left: 35px;
 }
 .cart-actions .addToCartListNum {
     max-width: 70px;

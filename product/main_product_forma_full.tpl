@@ -38,23 +38,25 @@
                         </div>
                     </div>
 
-                    <div class="row orderinfo"> <!--row Ò ÓÔˆËˇÏË ‚˚·Ó‡ Ë ÍÓÎ. Ì‡ÎË˜Ëˇ-->
-                        <!-- Œœ÷»» / Õ¿À»◊»≈-->
-                        <div class="row">
-                            <div class="col-md-6">
+                    <div class="row"> <!--row Ò ÓÔˆËˇÏË ‚˚·Ó‡ Ë ÍÓÎ. Ì‡ÎË˜Ëˇ-->
+                        <div class="orderinfo">
+                            <!-- Œœ÷»» / Õ¿À»◊»≈-->
+                            <div class="col-md-8">
                                 <div class="tovar_optionsDisp">
                                     @optionsDisp@
                                 </div>
                             </div>
 
 
-                            <div class="col-xs-6">
-                                <div class="small instock">@productSklad@</div>
+                            <div class="col-xs-4">
+                                <div class="small instock pull-right">@productSklad@</div>
                             </div>
                         </div>
+                    </div>
 
-                        <!-- ÷≈Õ¿ /  ”œ»“‹-->
-                        <div class="row">
+                    <!-- ÷≈Õ¿ /  ”œ»“‹-->
+                    <div class="row">
+                        <div class="prod-row">
                             <div class="col-md-6" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <div>
                                     <span class="specprice" itemprop="price">@productPrice@</span>
@@ -65,24 +67,26 @@
 
                             <div class="col-md-6">
                                 <div class="cart-actions">
-                                    <input class="form-control addToCartListNum text-center" data-uid="@productUid@" type="text"
+                                    <input class="form-control addToCartListNum text-center" data-uid="@productUid@"
+                                           type="text"
                                            style="min-width:50px" maxlength="3" value="1" placeholder="1" required="">
                                     @ComStartCart@
                                     <div class="input-group">
                                         <span class="input-group-btn">
-                                            <button class="btn btn-default btn-lg addToCartList" role="button" data-num="1" data-uid="@productUid@">
-                                            <i class="fa fa-shopping-cart"></i>@productSale@
+                                            <button class="btn btn-default btn-lg addToCartList" role="button"
+                                                    data-num="1" data-uid="@productUid@">
+                                                <i class="fa fa-shopping-cart"></i>@productSale@
                                             </button>
                                         </span>
                                     </div>
                                     @ComEndCart@
 
                                     @ComStartNotice@
-                                        <a href="/users/notice.html?productId=@productUid@"
-                                                       title="@productNotice@"
-                                                       class="button-exclusive" id="button-cart">
-                                            ”‚Â‰ÓÏËÚ¸
-                                        </a>
+                                    <a href="/users/notice.html?productId=@productUid@"
+                                       title="@productNotice@"
+                                       class="button-exclusive" id="button-cart">
+                                        ”‚Â‰ÓÏËÚ¸
+                                    </a>
                                     @ComEndNotice@
                                 </div>
                             </div>
