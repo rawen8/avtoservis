@@ -53,42 +53,14 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-3 sort-bar-brand row">
 
-            <div class="btn-group brand-opt">
-                <!--Список выбора торговой марки. Вар.1-->
-                <div class="btn-group">
-                    <button type="button" class="btn btn-default dropdown-toggle btn-sm" data-toggle="dropdown" data-target="#" aria-expanded="false">
-                        <span id="">Торговая марка</span> <i class="fa fa-chevron-down"></i>
-                    </button>
-                    <ul class="dropdown-menu mega-menu">
-                        @brandsList@
-                    </ul>
-                </div>
-                <!--Список выбора торговой марки. Вар.1-->
-
-                <!--Список выбора торговой марки. Вар.2-->
-                        <!--
-                        <div class="sort">
-                            <select class="text-left">
-                                <option value="" selected="selected">Торговая марка</option>
-                                <option value="2">торговая марка 1</option>
-                                <option value="5">торговая марка 2</option>
-                                <option value="3">торговая марка 3</option>
-                                <option value="4">торговая марка 4</option>
-                            </select>
-                        </div>-->
-                <!--.Список выбора торговой марки. Вар.2-->
-            </div>
-        </div>
-        <div class="col-md-4">
-            <div class="buttons">
-                <button class="btn btn-default btn-sm">Применить</button>
-                <button class="btn btn-default btn-sm">Сбросить</button>
-            </div>
-        </div>
-        <div class="col-md-5"></div>
     </div>
+    <div class="brand-opt">
+
+    </div>
+
+
+
 
 
     <a name="sort"></a>

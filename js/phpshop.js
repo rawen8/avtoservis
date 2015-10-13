@@ -421,10 +421,21 @@ $(document).ready(function() {
 
     // Фасетный фильтр
     if (FILTER && $("#sorttable table td").html()) {
+
         $("#faset-filter-body").html($("#sorttable table td").html());
         $("#faset-filter").removeClass('hide');
-    }
-    else {
+        var $checkboxItems = $("#sorttable table td input[type='checkbox']");
+        var brandId = "51-";
+        var selectHtml = "<select><option value=''>Торговая марка</option>";
+        $checkboxItems.each(function(){
+            if($(this).attr('data-name').indexOf(brandId) == 0) {
+                selectHtml+="<option value='"+$(this).attr('data-name')+"'>" + $(this).next().html() + "</option>";
+            }
+        });
+        selectHtml+='</select><button class=" confirm btn btn-default btn-sm">Применить</button><button class=" void btn btn-default btn-sm">Сбросить</button>';
+        $('.brand-opt').html(selectHtml);
+        $('.brand-opt select').styler();
+    } else {
         $("#faset-filter").hide();
     }
 
@@ -433,20 +444,70 @@ $(document).ready(function() {
         $("#sorttable").removeClass('hide');
     }
 
+    $('.brand-opt button.confirm').on('click',function(){
+        var brandId= '51-';
+        var brandPath = $('.brand-opt select').val();
+        $('#faset-filter-body input').each(function() {
+            if ($(this).prop('checked')) {
+                $(this).prop('checked', false);
+                window.location.hash = window.location.hash.replace($(this).attr('data-url') + '&', '');
+
+            }
+        });
+        var $check = $('#faset-filter-body input[data-name="'+brandPath+'"]');
+
+        $check.prop('checked', true);
+        faset_filter_click($check);
+
+    });
+    $('.brand-opt button.void').on('click',function(){
+        window.location.hash ='';
+        faset_filter_click();
+        $('.brand-opt .jq-selectbox__dropdown li').first().click();
+        $('#faset-filter-body input').each(function() {
+            if ($(this).prop('checked')) {
+                $(this).prop('checked', false);
+            }
+        });
+    });
 
     // Направление сортировки
-    $('#filter-well input:radio').on('change', function() {
+    $('#filter-well .sort select').on('change', function() {
         if (AJAX_SCROLL) {
 
             count = current;
 
-            window.location.hash = window.location.hash.split($(this).attr('name') + '=1&').join('');
-            window.location.hash = window.location.hash.split($(this).attr('name') + '=2&').join('');
-            window.location.hash += $(this).attr('name') + '=' + $(this).attr('value') + '&';
 
-            filter_load(window.location.hash);
+            window.location.hash = window.location.hash.split($(this).attr('name') + '=2&').join('');
+
+
+
+            var sort = "";
+
+            switch ($(this).val()) {
+                case '1' :
+                    sort = "s=3";
+                    break;
+                case '2' :
+                    sort = "s=1&f=1";
+                    break;
+                case '3' :
+                    sort = "s=2&f=1";
+                    break;
+                case '4' :
+                    sort = "s=2&f=2";
+                    break;
+                case '5':
+                    sort = "s=1&f=2";
+                    break;
+                default:
+                    sort = "";
+            }
+
+
+            filter_load(window.location.hash+sort+'&');
         }
-        else {
+        /*else {
 
             var href = window.location.href.split('?')[1];
 
@@ -461,7 +522,7 @@ $(document).ready(function() {
             href = href.split($(this).attr('name') + '=2&').join('');
             href += $(this).attr('name') + '=' + $(this).attr('value');
             window.location.href = '?' + href;
-        }
+        }*/
     });
 
 

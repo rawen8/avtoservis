@@ -302,9 +302,9 @@
                 <div class="page-header">
                     <h2>О нас</h2>
                 </div>
-                <div id="new-list">
+
                     <div class="main-content">@mainContent@</div>
-                </div>
+
                 <div class="visible-xs visible-sm">@leftCatalTable@</div>
                 <!-- toTop -->
                 <div class="visible-lg visible-md">
