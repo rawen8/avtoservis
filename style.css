@@ -465,7 +465,7 @@ span.wait {
     display: inline-block;
     width: 16px;
     height: 16px;
-    background: url(/phpshop/lib/templates/icon/loading.gif) center center no-repeat;
+
 }
 
 input.reqActiv, select.reqActiv {
@@ -537,7 +537,6 @@ input.reqActiv, select.reqActiv {
     padding: 0 5px;
     letter-spacing: -0.5px;
     font-weight: bold;
-    font-size: bold;
     font-family: "MyriadPro-Regular",Helvetica,Arial,sans-serif;
     padding-right: 26px;
 }
@@ -1149,16 +1148,14 @@ form[role="form"] .input-group .btn-info {
 
 .carousel-caption .slide-txt2 {
     font-size: 48px;
-    padding: 5px 0px 11px 2px;
+    padding: 5px 0 11px 2px;
     margin-top: 14px;
     line-height: 51px;
     letter-spacing: -0.02em;
     font-family: "MyriadPro-Regular", Helvetica, Arial, sans-serif;
 }
 
-//.carousel-caption .slide-txt2:before {  content: "";  border-top: 2px solid #dedee4;  width: 58%;  display: block;  }
 
-//.carousel-caption .slide-txt2:after {  content: "";  border-top: 2px solid #dedee4;  width: 58%;  display: block;  margin-top: 10px;  }
 
 .bg {
     height: 1500px;
@@ -1528,7 +1525,7 @@ footer.well {
 }
 
 #news {
-    display: inline-box;
+    display: inline-block;
     background: #FBFDFF;
     box-shadow: 0px 0px 4px -2px #404040;
 }
@@ -1581,7 +1578,7 @@ footer.well {
 #inner-list .owl-carousel-control,
 #new-list .owl-carousel-control,
 #inner-new-list .owl-carousel-control {
-    background-color: url(images/px2.png);
+    background-image: url(images/px2.png);
     z-index: 20;
     margin-top: -62px;
 }
@@ -1767,6 +1764,7 @@ footer.well {
     color: #ffffff;
     background-color: #ff2e2e;
     border-color: transparent;
+}
 .sort > span {
     display: inline-block;
     position: relative;
@@ -1776,7 +1774,7 @@ footer.well {
     padding: 45px 0px;
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
-
+}
 .input-group-btn .addToCartList {
     height: 40px;
     width: 126px;
@@ -2234,7 +2232,7 @@ footer.well {
 }
 
 .template-slider .carousel-control {
-    opacity: -0.5;
+    opacity: 0.5;
 }
 #visualcart {
     color: #7d7d7d;
@@ -2545,7 +2543,7 @@ form[action="/search/"] .input-group-btn > button {
 
     .dropdown-menu-right {
         right: -200px !important;
-        top: 0px !important;
+        top: 0 !important;
         width: inherit !important;
     }
 
