@@ -1701,7 +1701,9 @@ footer.well {
     border-color: transparent;
 }
 .prod-row {
-
+    padding: 45px 0px;
+    border-top: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
 }
 
 .specprice {
@@ -2048,7 +2050,9 @@ footer.well {
 .cart-actions button.addToCartList i {
     margin-right: 15px;
 }
-
+.cart-actions .form-control {
+    border: 1px solid #dedede;
+}
 .notify {
     margin: 0px;
     padding: 0px;

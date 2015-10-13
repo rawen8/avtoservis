@@ -38,8 +38,9 @@
                         </div>
                     </div>
 
-                    <div class="row"> <!--row ñ îïöèÿìè âûáîðà è êîë. íàëè÷èÿ-->
-                        <div class="orderinfo">
+
+                    <div class="orderinfo"><!--row ñ îïöèÿìè âûáîðà è êîë. íàëè÷èÿ-->
+                        <div class="row">
                             <!-- ÎÏÖÈÈ / ÍÀËÈ×ÈÅ-->
                             <div class="col-md-8">
                                 <div class="tovar_optionsDisp">
@@ -55,8 +56,9 @@
                     </div>
 
                     <!-- ÖÅÍÀ / ÊÓÏÈÒÜ-->
-                    <div class="row">
-                        <div class="prod-row">
+
+                    <div class="prod-row">
+                        <div class="row">
                             <div class="col-md-6" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 <div>
                                     <span class="specprice" itemprop="price">@productPrice@</span>
