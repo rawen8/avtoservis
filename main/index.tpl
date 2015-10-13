@@ -91,7 +91,7 @@
                             <span class="tel-num"><i class="fa fa-phone"></i> @telNum@</span>
 
                             <div>
-                                <span class="shedule-days">ПНД-ПТН: 10:00 - 19:00</span> <span class="mail-adr">@adminMail@</span>
+                                <span class="shedule-days">ПНД-ПТН:</span> <span class="wort-time">10:00 - 19:00</span> <i class="fa fa-envelope"></i> <span class="mail-adr">@adminMail@</span>
                             </div>
                         </div>
                     </div>
@@ -190,13 +190,15 @@
                                        data-placement="bottom" data-html="true" data-url="/order/"
                                        data-content='@visualcart@'>
                                         <div class="bl1">
-                                            <span class="visible-lg-inline">
-                                            <span id="num"
-                                                  class="label label-info">@num@</span>
-                                            товаров -
-                                        </span>
-                                            <span id="sum" class="label label-info">@sum@</span>
-                                            @productValutaName@
+                                            <span class="visible-lg-inline label label-info">
+                                                <span id="num">
+                                                    @num@ товаров -
+                                                </span>
+
+                                                <span id="sum">
+                                                    @sum@ @productValutaName@
+                                                </span>
+                                            </span>
                                             <span class="vert-line"></span>
                                         </div>
                                             <div class="cart-icon bl2">
@@ -288,18 +290,6 @@
                 </div>
 
                 <div class="page-header">
-                    <h2>Сейчас покупают</h2>
-                </div>
-                <div id="new-list">
-                    <div class="owl">
-                        @nowBuy@
-                    </div>
-                    <a class="owl-carousel-control left"></a>
-                    <a class="owl-carousel-control right"></a>
-                </div>
-
-
-                <div class="page-header">
                     <h2>О нас</h2>
                 </div>
                 <div id="new-list">
@@ -333,7 +323,6 @@
                         </li>
                         <li>
                             <i class="fa fa-envelope"></i>
-
                             <div class="info">@adminMail@</div>
                         </li>
                     </ul>

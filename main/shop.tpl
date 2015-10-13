@@ -194,13 +194,15 @@
                                        data-placement="bottom" data-html="true" data-url="/order/"
                                        data-content='@visualcart@'>
                                         <div class="bl1">
-                                            <span class="visible-lg-inline">
-                                            <span id="num"
-                                                  class="label label-info">@num@</span>
-                                            товаров -
-                                        </span>
-                                            <span id="sum" class="label label-info">@sum@</span>
-                                            @productValutaName@
+                                            <span class="visible-lg-inline label label-info">
+                                                <span id="num">
+                                                    @num@ товаров -
+                                                </span>
+
+                                                <span id="sum">
+                                                    @sum@ @productValutaName@
+                                                </span>
+                                            </span>
                                             <span class="vert-line"></span>
                                         </div>
                                         <div class="cart-icon bl2">

@@ -500,12 +500,12 @@ input.reqActiv, select.reqActiv {
 
 .breadcrumb {
     border-radius: 0;
-    font-family: "MyriadPro-Cond", Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-family: "MyriadPro-Regular";
+    font-size: 14px;
     background: none;
     padding: 3px;
     margin-bottom: 0;
-    height: 48px;
+    height: 35px;
 }
 
 .breadcrumb a {
@@ -520,7 +520,7 @@ input.reqActiv, select.reqActiv {
 
 .breadcrumb b,
 .breadcrumb > .active {
-    color: #F90E1F;
+    color: #8f8f8f;
     font-weight: normal;
     padding: 0 5px;
 }
@@ -701,7 +701,7 @@ header .col-md-12 {
 #cartlink .label-info {
     background: none;
     color: #fff;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: normal;
 }
 
@@ -744,11 +744,6 @@ header .background {
 .background-inner {
     background-image: url(images/chess.png);
     height: 58px;
-}
-
-.main.col-md-9 {
-    padding-right: 16px;
-    padding-left: 20px;
 }
 .row.specials {
     position: relative;
@@ -976,11 +971,14 @@ form[role="form"] .input-group .btn-info {
 .panel-default {
     position: relative;
     z-index: 15;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #e5e5e5;
     padding-bottom: 1px;
-    background: #fbfdff;
+    background: #ffffff;
     border-radius: 0;
     margin-top: 20px;
+    -webkit-box-shadow: 0 0 0 1px #f7f7f7;
+    -moz-box-shadow:  0 0 0 1px #f7f7f7;
+    box-shadow:  0 0 0 1px #f7f7f7;
 }
 
 #helpBlock .btn-default {
@@ -1086,48 +1084,40 @@ form[role="form"] .input-group .btn-info {
 
 .carousel-caption {
     right: 32.4%;
-    left: 4.8%;
+    left: 8.8%;
     padding-bottom: 0px;
-    padding-top: 16px;
+    padding-top: 50px;
     text-align: left;
     top: 8%;
-    font-weight: bold;
-    letter-spacing: 0.05em;
-    font-size: 120%;
+    letter-spacing: -0.5px;
+    font-size: 100%;
+    text-shadow: none;
 }
 
 .carousel-caption .more-link {
     position: absolute;
-    left: 0;
-    bottom: 6px;
+    left: -8px;
+    bottom: 22px;
     padding: 11px 10px;
-    background: #404040;
+    background: transparent;
+    color: #636363;
+    text-decoration: underline;
+    font-size: 14px;
+    font-family: 'MyriadPro-Regular', Helvetica, Arial, sans-serif;
 }
 
 .carousel-caption .slide-txt2 {
     font-size: 48px;
     padding: 5px 0px 11px 2px;
     margin-top: 14px;
-    font-weight: bold;
     line-height: 51px;
     letter-spacing: -0.02em;
-    font-family: "MyriadPro-Bold", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro-Regular", Helvetica, Arial, sans-serif;
 }
 
-.carousel-caption .slide-txt2:before {
-    content: "";
-    border-top: 2px solid #dedee4;
-    width: 58%;
-    display: block;
-}
+//.carousel-caption .slide-txt2:before {  content: "";  border-top: 2px solid #dedee4;  width: 58%;  display: block;  }
 
-.carousel-caption .slide-txt2:after {
-    content: "";
-    border-top: 2px solid #dedee4;
-    width: 58%;
-    display: block;
-    margin-top: 10px;
-}
+//.carousel-caption .slide-txt2:after {  content: "";  border-top: 2px solid #dedee4;  width: 58%;  display: block;  margin-top: 10px;  }
 
 .bg {
     height: 1500px;
@@ -1174,6 +1164,15 @@ header .nav-pills.pull-right a {
 }
 
 .page-header h2 {
+    display: inline-block;
+    background: #ffffff;
+    font-size: 20px;
+    font-family: "MyriadPro-Regular", Helvetica, Arial, sans-serif;
+    position: relative;
+    bottom: 0;
+    padding: 0 25px;
+}
+.page-header h3 {
     display: inline-block;
     background: #ffffff;
     font-size: 20px;
@@ -1316,7 +1315,7 @@ header .nav-pills.pull-right a {
 }
 .product .btn-sale h3 .text-muted > span {
     position: relative;
-    top: 6px;
+    top: 3px;
     font-family: "MyriadPro-Bold";
 }
 
@@ -1588,44 +1587,60 @@ footer.well {
     text-transform: uppercase;
     font-size: 16px;
 }
+.nav-tabs {
+    border: none;
+}
 
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus,
-.nav-tabs > li > a:hover,
-.nav-tabs > li > a:focus {
-    background-color: #3c6478;
-    background-image: url(images/chess.png);
-    color: #FFFFFF;
+.nav-tabs > li.active > a{
+    color: #221914;
     border: none;
     box-shadow: none;
     border-radius: 0;
+    border-bottom: 1px solid #efefef;
 }
 
 .nav-tabs > li > a {
-    color: #FFFFFF;
+    color: #ababab;
     text-transform: uppercase;
-    font-family: "MyriadPro-Bold", Helvetica, Arial, sans-serif;
+    font-family: "MyriadPro-Regular";
     border: none;
     box-shadow: none;
     border-radius: 0;
-    background-color: #424242;
-    background-image: url(images/chess.png);
     margin-right: 0;
+}
+.nav-tabs > li > a:hover,
+.nav-tabs > li > a:focus {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #efefef;
+}
+
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+    border: none;
+    border-bottom: 1px solid #efefef;
+    color: #221914;
+}
+.tab-content {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.tab-content p {
+    color: #a5a5a5;
 }
 
 #productinfo {
     color: #616161;
     font-family: "MyriadPro-Regular", Helvetica, Arial, sans-serif;
-
+    border-bottom: 1px solid #EFEFEF;
+    clear: both;
 }
 
 #productinfo .nav-tabs a {
-    font-size: 15.5px;
-    height: 42px;
-    width: 120px;
+    font-size: 21px;
     text-align: center;
-    padding-top: 8px;
+    padding: 15px 24px;
+    letter-spacing: -0.6px;
+    border-bottom: 1px solid #EFEFEF;
 }
 
 #iteminfo .col-md-5 {
@@ -1651,7 +1666,7 @@ footer.well {
 }
 
 .orderinfo {
-
+    padding: 34px 0;
 }
 
 .orderinfo .btn-warning > h3 {
@@ -1705,7 +1720,9 @@ footer.well {
     border-top: 1px solid #efefef;
     border-bottom: 1px solid #efefef;
 }
-
+.extra-button {
+    padding-top: 12px;
+}
 .specprice {
     color: #15100d;
     font-size: 26px;
@@ -1724,6 +1741,7 @@ footer.well {
 }
 
 .instock {
+    padding-top: 18px;
     font-size: 14px;
     color: #666666;
 }
@@ -1821,17 +1839,19 @@ footer.well {
 }
 
 .main .page-header h3 {
-    font-size: 16px;
-    font-family: "MyriadPro-BoldCond", Helvetica, Arial, sans-serif;
-    font-size: 23px;
     display: inline-block;
     background: #FFF none repeat scroll 0% 0%;
     position: relative;
-    bottom: -22px;
     padding: 0px 25px;
     left: -350px;
 }
-
+.h3-style-wrap .page-header h3 {
+    display: inline-block;
+    background: #FFF none repeat scroll 0% 0%;
+    position: relative;
+    padding: 0px 25px;
+    left: -335px;
+}
 .inner-page-header {
     text-align: left;
     margin-top: -35px;
@@ -1866,7 +1886,7 @@ footer.well {
 
 .form-control {
     box-shadow: none;
-    border: 1px solid #7c7c7c;
+    border: 1px solid #ccc;
     border-radius: 0;
 }
 
@@ -1960,16 +1980,12 @@ footer.well {
 }
 
 #cartlink .visible-lg-inline {
-    padding-left: 10px;
+    padding: 6px 10px;
 }
 
 .about-company {
     margin-left: -13px;
     padding-left: 9px;
-}
-
-.nav-tabs .description {
-    width: 132px !important;
 }
 
 .tabs ul {
@@ -1988,7 +2004,7 @@ footer.well {
     color: #214e65;
 }
 
-.row .page-header h3 {
+/*.row .page-header h3 {
     display: inline-block;
     background: #FFF none repeat scroll 0% 0%;
     font-size: 25px;
@@ -1996,15 +2012,11 @@ footer.well {
     position: relative;
     bottom: -22px;
     padding: 0px 25px;
-}
+}*/
 
 .visible-lg .page-header,
 .page-wrap .page-header {
     margin: 0 0 20px;
-}
-
-.tabs .nav-tabs {
-    border-bottom: 1px solid #000;
 }
 
 .mega-menu-block .nav-header {
@@ -2087,47 +2099,58 @@ footer.well {
 .more-actions .notify {
     width: 105px;
     font-family: "MyriadPro-Regular", Helvetica, Arial, sans-serif !important;
-    background-image: url("images/chess.png");
-    background-color: #356579;
+    background-color: #262626;
 }
 
 .more-actions .notify:hover {
-    background-image: none;
+    background: #f80000;
 }
 
 .pull-left .more-actions .addToWishList,
-.pull-left .more-actions .addToCompareList,
-.pull-left .more-actions .addToCartList {
+.pull-left .more-actions .addToCompareList {
     height: 39px;
     color: #FFF;
-    background-image: url("images/chess.png");
-    background-color: rgb(63, 63, 63);
-    background-color:;
+    background-color: #393939;
     border: medium none;
 }
 
 .pull-left .more-actions .addToCartList {
-    background-color: #356579;
+    color: #fff;
+    background-color: #262626;
     font-size: 12px;
+    text-transform: uppercase;
 }
 
 .pull-left .more-actions .addToWishList,
 .pull-left .more-actions .addToCartList {
     line-height: 29px;
+    width: 100px;
 }
 
 .more-actions .addToCartList:hover {
     color: #ffffff !important;
-    background-image: none;
+    background: #f80000;
 }
 
 .more-actions .addToCartList:hover i:before {
     color: #ffffff !important;
 }
 
-.carousel-caption .slide-txt1,
+.list-forma .orderinfo h3 {
+    margin-top: 18px;
+}
+.carousel-caption .slide-txt1 {
+    max-width: 270px;
+    color: #636363;
+    clear: left;
+    display: block;
+    padding-top: 10px;
+}
 .carousel-caption .slide-txt2 {
     color: #282828;
+}
+.slide-txt2 > span {
+    font-weight: bold;
 }
 .product #button-cart {
     display: block;
@@ -2222,6 +2245,10 @@ footer.well {
     height: 32px;
     border: none;
 }
+.well.search .input-group-btn .btn-info {
+    left: -20px;
+    border-left: 1px solid #ccc;
+}
 .popover.bottom, .popover-content {
     border-radius: 0;
 }
@@ -2250,7 +2277,7 @@ footer.well {
 
 /* ********************************************************************** */
 .top_line {
-    min-height: 38px;
+    min-height: 34px;
     border-bottom: 1px solid #000;
     background: url(./images/top_line_bg.jpg) repeat;
 }
@@ -2271,7 +2298,7 @@ footer.well {
 .top_line a {
     color: #000;
     font-family: "MyriadPro-Regular";
-    font-size: 15px;
+    font-size: 16px;
 }
 
 .top_line ul {
@@ -2281,11 +2308,11 @@ footer.well {
 }
 
 .top_line ul.nav {
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 .page-catal li {
-    padding: 8px 20px 8px 0;
+    padding: 5px 20px 5px 0;
 }
 
 .top_line .nav > li > a {
@@ -2307,7 +2334,7 @@ header #header {
     margin-top: 10px;
 }
 
-form[action="/search/"] {
+#header form[action="/search/"] {
     margin-top: 88px;
     display: inline-block;
 }
@@ -2321,19 +2348,24 @@ form[action="/search/"] .input-group-btn > button {
     border-top: 1px solid #f4f4f4;
     border-bottom: 1px solid #f4f4f4;
 }
-
+.top-adr span {
+    letter-spacing: 0.3px;
+}
 .tel-num {
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .shedule-days {
-    font-size: 10px;
+    font-size: 9.5px;
 }
 
-.mail-adr {
-    font-size: 12px;
+.mail-adr,
+.wort-time {
+    font-size: 14px;
 }
-
+.top-adr i.fa {
+    margin: 0 4px;
+}
 .top_menu {
     background: #262626;
     height: 58px;
@@ -2402,16 +2434,17 @@ form[action="/search/"] .input-group-btn > button {
 }
 #cartlink .bl1 {
     border-right: 1px solid rgba(255,255,255,0.5);
-    padding-right: 5px;
+    margin-right: 0;
 }
 #cartlink:hover .bl2 {
     background: #000;
     border-radius: 21px;
     height: 42px;
     width: 42px;
-    margin: 5.5px 0 5.5px 0;
+    margin: 5.5px 4px 5.5px 0;
     position: relative;
     top: -3px;
+
 }
 #cartlink:hover img {
     margin-left: 9px;
