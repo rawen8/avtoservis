@@ -70,10 +70,13 @@
 
                             <div class="col-md-6">
                                 <div class="cart-actions">
-                                    <input class="form-control addToCartListNum text-center" data-uid="@productUid@"
-                                           type="text"
-                                           style="min-width:50px" maxlength="3" value="1" placeholder="1" required="">
-                                    @ComStartCart@
+                                     @ComStartCart@
+                                    <div class="inputNum clearfix">
+                                        <div class="dec"  onclick="javascript:addOrDeleteProduct(0, @productUid@)" ></div>
+                                        <input class="addToCartListNum" style="width:70px" data-uid="@productUid@" id="n@productUid@" type="num" maxLength="3" size="5" value="1" name="n@productUid@">
+                                        <div class="inc" onclick="javascript:addOrDeleteProduct(1, @productUid@)" ></div>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;
+                                    </div>
                                     <div class="input-group">
                                         <span class="input-group-btn">
                                             <button class="btn btn-default btn-lg addToCartList" role="button"

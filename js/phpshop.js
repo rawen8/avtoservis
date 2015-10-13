@@ -80,6 +80,20 @@ function commentList(xid, comand, page, cid) {
     });
 }
 
+
+function addOrDeleteProduct(flag, id) {
+    var num = 1;
+    var val = eval(document.getElementById("n" + id).value);
+    if (flag == 1) {
+        document.getElementById("n" + id).value = val + num;
+        $('.addToCartList[data-uid=' + id + ']').attr('data-num', val + num);
+    } else if (flag == 0) {
+        if (val > 1) {
+            document.getElementById("n" + id).value = val - num;
+            $('.addToCartList[data-uid=' + id + ']').attr('data - num', val - num);
+        }
+    }
+}
 // добавление товара в корзину
 function addToCartList(product_id, num, parent, addname) {
 
@@ -365,6 +379,12 @@ function setEqualHeight(columns) {
 
 
 $(document).ready(function() {
+    //active menu item
+    var link = $('body').attr('source');
+    if(link){
+
+        $('#catalog-menu a[href="/'+ link + '"]').addClass('active-link').closest('ul').prev('a').addClass('active-link').click().focus();
+    }
 
     // логика кнопки оформления заказа 
     $("button.orderCheckButton").on("click", function(e) {
@@ -402,7 +422,35 @@ $(document).ready(function() {
         }
 
     });
+    // ??????????? ??????????
+    $('#filter-well input:radio').on('change', function() {
+        if (AJAX_SCROLL) {
 
+            count = current;
+
+            window.location.hash = window.location.hash.split($(this).attr('name') + '=1&').join('');
+            window.location.hash = window.location.hash.split($(this).attr('name') + '=2&').join('');
+            window.location.hash += $(this).attr('name') + '=' + $(this).attr('value') + '&';
+
+            filter_load(window.location.hash);
+        }
+        else {
+
+            var href = window.location.href.split('?')[1];
+
+            if (href == undefined)
+                href = '';
+
+            var last = href.substring((href.length - 1), href.length);
+            if (last != '&' && last != '')
+                href += '&';
+
+            href = href.split($(this).attr('name') + '=1&').join('');
+            href = href.split($(this).attr('name') + '=2&').join('');
+            href += $(this).attr('name') + '=' + $(this).attr('value');
+            window.location.href = '?' + href;
+        }
+    });
 
     // Ценовой слайдер
     $("#slider-range").on("slidestop", function(event, ui) {
@@ -433,7 +481,11 @@ $(document).ready(function() {
             }
         });
         selectHtml+='</select><button class=" confirm btn btn-default btn-sm">Применить</button><button class=" void btn btn-default btn-sm">Сбросить</button>';
+
         $('.brand-opt').html(selectHtml);
+        if($('.brand-opt select option').length<2){
+            $('.brand-opt').remove();
+        }
         $('.brand-opt select').styler();
     } else {
         $("#faset-filter").hide();
@@ -912,9 +964,9 @@ $(document).ready(function() {
 
         autoPlay: 50000, //Set AutoPlay to 3 seconds
 
-        items : 3,
-        itemsDesktop : [1199,3],
-        itemsDesktopSmall : [979,2],
+        items : 4,
+        itemsDesktop : [1199,4],
+        itemsDesktopSmall : [979,3],
         itemsTablet:[768,2],
         itemsMobile:[479,1]
 

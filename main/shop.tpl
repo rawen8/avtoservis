@@ -53,7 +53,7 @@
 
 </head>
 
-<body role="document" id="body">
+<body role="document" id="body" source="@NavActive@">
 <div class="page-wrap">
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="@php echo $GLOBALS['SysValue']['dir']['templates'].chr(47).$_SESSION['skin'].chr(47); php@js/jquery-1.11.0.min.js"></script>
