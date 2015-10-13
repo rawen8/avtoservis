@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default list-forma">
     <div class="panel-body">
         <div class="media">
             <span class="sale-icon-content">
@@ -12,7 +12,7 @@
                 <p>@productDes@</p>
                 <div class="row orderinfo">
                     <div class="col-xs-4" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-                        <div class="btn btn-warning">
+                        <div>
                             <h3>@productPrice@ @productValutaName@ <sup class="text-muted small">@productPriceRub@</sup></h3>
                         </div>
                     </div>
